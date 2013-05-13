@@ -1,0 +1,15 @@
+Rails commands:
+	"bundle install" ---> install gems
+	"rails s" ----> run server
+
+
+
+
+GIT----------------------------
+
+	git init  -----> initialize git repo
+	git add . -----> add all the in git repo( except .gitignore) ---->  adds file to the stging area.
+	git commit -m "initial commit"	----> -m flag lets you enter the message for commit.	
+	git log ----> to see the commit messages, type "q" to quit.
+	git checkout -f ---> we can still undo the changes easily by having Git check out the previous commit with the checkout command (and a -f flag to force overwriting the current changes)
+
