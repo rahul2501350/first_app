@@ -13,3 +13,22 @@ GIT----------------------------
 	git log ----> to see the commit messages, type "q" to quit.
 	git checkout -f ---> we can still undo the changes easily by having Git check out the previous commit with the checkout command (and a -f flag to force overwriting the current changes)
 
+----- CREATING NEW REPO FROM COMMAND LINE-----
+	git init
+	git commit -m "first commit"
+	git remote add origin git@github.com:rahul2501350/first_app.git
+	git push -u origin master
+
+------Push an existing repository from the command line-------
+	git remote add origin git@github.com:rahul2501350/first_app.git
+	git push -u origin master
+			These commands tell Git that you want to add GitHub as the origin for your main (master) branch and then push your repository up to GitHub
+
+--BRANCH---
+
+git checkout -b new_branch_name   ----> creates new branch and switch to it.
+git branch  ----> shows all the branch and current branch
+
+git commit -a -m "Improve the README file"----> instead of "git add ." we are using -a flag which commits all modifications to existing files but not new files.
+
+##Be careful about using the -a flag improperly; if you have added any new files to the project since the last commit, you still have to tell Git about them using git add first.
